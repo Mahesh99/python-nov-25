@@ -116,6 +116,8 @@ print(type(1))
 
 # Type conversion/Type casting
 # converting one datatype to another
+# int(),float(),str()
+
 s1="21"
 c=int(s1)
 print(c)
@@ -149,6 +151,8 @@ b=str(4.5)
 c=str('hi')
 d=str(True)
 
+print(a,b,c,d)
+
 # string operations
 # +(concatenation),*(repetition)
 # + -> only 2 strings can be concatenated
@@ -159,7 +163,52 @@ s3=s1+" "+s2
 print(s3)
 
 s4=s1*5
+# s4="hi"*5
 print(s4)
 
 print(s1+"5")
 # print(s1+5)
+
+
+z=10
+z+=20
+z%=5
+print(z)
+z-=5
+print(z)
+
+# Comparison    
+# >,<,>=,<=,==,!=
+
+print(1>5)
+print(1<5)
+print(1>=5)
+print(5<=5)
+print(5==5)
+print(5!=5)
+
+a=1>5
+print(type(a))
+
+print(True+True)
+print(False+True)
+
+# Logical 
+# and, or, not
+print(True and True)
+print(True and False)
+print(False and True)
+print(False and False)  
+print("-----")
+print(True or True)
+print(True or False)
+print(False or True)
+print(False or False)  
+print("-----")
+print(not True)
+print(not False)
+
+# Based on operands operators are classified into
+# 1. Unary operators - not
+# 2. Binary operators - +,-,*,/,%,//,**,>,<,
+

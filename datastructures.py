@@ -127,3 +127,79 @@ print(words)
 # s2 = "*".join(words)
 s2 = " ".join(words)
 print(s2)
+
+# tuple
+# creating a tuple
+my_tuple = (1, 2, 3, 4, 5)
+my_tuple2 = ("apple", "banana", "cherry")
+my_tuple3 = 1, "apple", 3.14, True
+print(type(my_tuple3))
+# print(sum(my_tuple))
+print(min(my_tuple2))
+print(max(my_tuple2))
+
+# dir()
+print(dir(my_tuple))
+print(dir(list))
+
+
+# Set
+# creating a set
+my_set = {1, 2, 3, 4, 5,1,2,3}
+my_set2 = {"apple", "banana", "cherry","apple"}
+my_set3 = {1, "apple", 3.14, True}
+print(my_set)
+print(my_set2)
+
+# accessing elements
+# sets are unordered, so we cannot access elements by index
+
+# modifying elements
+my_set.add(6)
+print(my_set)
+my_set.remove(3)
+print(my_set)
+
+# list(), set(), tuple() conversions
+fav_actors = ["Prabhas","Shruthi Haasan","Naani","Ram Charan","Prabhas","Nivedha Thomas","Naani",
+                   "Ram Charan","Rakul Preeth","Samantha","Rakul Preeth","Prabhas","Samantha",
+                  "Nivedha Thomas","Naaga chaithanya","Salman khan","Salman khan","Vijay","Shradha kapoor","Vijay",
+                  "Shruthi Haasan","Naani","Ram Charan","Prabhas","Nivedha Thomas","Naaga chaithanya","Salman khan"]
+print(len(fav_actors))
+
+unique_actors = set(fav_actors)
+print(len(unique_actors))
+print(unique_actors)
+
+fav_actors2 = list(unique_actors)
+fav_actors2.sort()
+print(fav_actors2)
+
+fav_actors2=list(set(fav_actors))
+fav_actors2.sort()
+print(fav_actors2)  
+
+print(dir(set))
+
+set_a={1,2,3,4,5}
+set_b={4,5,6,7,8}
+# union
+set_c= set_a.union(set_b)
+print(set_c)
+
+# intersection
+set_d= set_a.intersection(set_b)
+print(set_d)
+
+# issubset
+set_e={1,2}
+print(set_e.issubset(set_a))
+print(set_a.issubset(set_e))
+
+# pop()
+set_n= {30,40,10,20,60}
+elem= set_n.pop()
+print(elem)
+print(set_n)
+
+print(help(set.pop))

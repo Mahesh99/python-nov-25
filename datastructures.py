@@ -203,3 +203,97 @@ print(elem)
 print(set_n)
 
 print(help(set.pop))
+
+
+# Dictionary
+# creating a dictionary
+my_dict = {"name": "John", "age": 30, "city": "New York"}
+print(my_dict)
+
+# accessing elements
+print(my_dict["name"])
+
+# modifying elements
+my_dict["age"] = 31
+print(my_dict)
+
+my_dict["country"] = "USA"  # adding new key-value pair
+print(my_dict)
+
+# dictionary methods
+# keys(), values(), items(), get(), pop(), popitem(), clear(), update()
+
+print(my_dict.keys())
+print(list(my_dict.keys()))
+print(my_dict.values())
+print(my_dict.items())
+
+# get()
+print(my_dict.get("name"))
+print(my_dict.get("salary"))  # returns None if key not found
+print(my_dict.get("salary", 50000))  # returns 50000 if key not found
+print(my_dict.get("age", 25))  # returns 31 as age key is present
+
+# pop()
+age = my_dict.pop("age")
+print(age)
+print(my_dict)
+
+# popitem()
+item = my_dict.popitem()
+print(item)
+print(my_dict)
+
+# update()
+my_dict.update({"age": 32, "city": "Los Angeles"})
+print(my_dict)
+
+# clear()
+my_dict.clear()
+print(my_dict)
+
+s=""
+l=[]
+t=()
+st=set()
+d={}
+
+# Membership operators: in, not in
+s="hello world"
+print('h' in s)
+print('z' not in s)
+print('z' in s)
+
+# list
+my_list = [1, 2, 3, 4, 5]
+print(3 in my_list)
+print(6 not in my_list)
+print(6 in my_list)
+
+# in, not in applicable same as list for tuple, set
+
+# Dictionary
+my_dict = {"name": "John", "age": 30, "city": "New York"}
+print("name" in my_dict)  # checks for key
+print("salary" not in my_dict)
+print("John" in my_dict)  # checks for key, not value
+
+# Identity operators: is, is not
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+print(a is b)  # True, as b references same object as a
+print(a is c)  # False, as c is a different object with same content
+
+s="hello"
+s1="hello"
+print(s is s1)  # True, as both refer to same string object in memory
+
+# nested data structures
+my_list= [1, 2, [3, 4], (5, 6), {"name": "John"}]
+print(my_list[2])  # [3,4]
+print(my_list[2][0])  # 3
+
+my_dict = {"name": "John", "age": 30, "address": {"city": "New York", "zip": "10001"}}
+print(my_dict['age'])  # 30
+print(my_dict["address"]["city"])  # New York

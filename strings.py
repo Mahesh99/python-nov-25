@@ -167,3 +167,9 @@ print(s10.isalnum())  # True
 s14="hello123 "
 print(s14.isalnum())  # False
 
+# f-strings
+name="Alice"
+age=30
+# print("My name is " + name + " and I am " + str(age) + " years old.")
+print(f"My name is {name} and I am {age} years old.")
+print(f"My name is {name} and I am {age} years old. Next year, I will be {age+1} years old.")

@@ -171,3 +171,80 @@ else:
     print(fruit)<------
 
 """
+
+if True:
+    print("Hello")
+
+if "":
+    print("World")
+l=[1,2,3]
+if l:
+    print("Python")
+
+k=["a","b","c"]
+for i in k:
+    print(i+i) #'a'+'a' => 'aa'
+
+
+# range() function
+# generates a sequence of numbers
+#
+# syntax: 
+# range(start, stop, step)
+
+# range(stop) => start=0, step=1
+# range(start, stop) => step=1
+# range(start, stop, step)
+
+for i in range(5):  # 0 to 4
+    print(i)
+
+for i in range(7):
+    print(i)
+
+for i in range(2, 8):  # 2 to 7
+    print(i)
+
+for i in range(1, 10, 2): 
+    print(i)
+
+for i in range(2,11,2):
+    print(i)
+
+for i in range(20,201,20):
+    print(i)
+
+"""
+2x1=2
+2x2=4
+2x3=6
+"""
+for i in range(2,21,2):
+    print(f"2x{i//2}={i}")
+
+for i in range(10,0,-1):
+    print(i)
+
+
+# while loop syntax
+"""
+while condition:
+    # code to be executed as long as condition is True
+"""
+
+count=1
+
+while count <= 10:
+    print(count)
+    count += 1
+
+# print numbers from 10 to 1
+count=10
+while count >= 1:
+    print(count)
+    count -= 1
+
+count=2
+while count <= 20:
+    print(count)
+    count += 2

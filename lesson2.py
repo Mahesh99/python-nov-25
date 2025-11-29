@@ -245,6 +245,14 @@ while count >= 1:
     count -= 1
 
 count=2
+
+
 while count <= 20:
     print(count)
     count += 2
+
+while False:
+    print("hello")
+
+# while True:
+#     print("hello")

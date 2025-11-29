@@ -13,7 +13,7 @@ And code after the loop will be executed
 
 # n=int(input("Enter a number: "))
 # prime=True
-# for i in range(2,n//2):
+# for i in range(2,n//2+1):
 #     if n%i==0:
 #         prime=False
 #         break
@@ -60,3 +60,62 @@ Iteration 5: fact=24 i=5
 #     new_rollnos.append(int(nr))
 # print(new_rollnos)
 
+# for no in range(1,10):
+#     print(int(no))
+#     break
+# else:
+#     print("Loop completed successfully")
+
+# star pattern
+# *
+# **
+# ***
+# ****
+# *****
+# n=int(input("Enter a number: "))
+# for i in range(1,n+1):
+#     print("*"*i)
+
+
+# star pattern-2
+#     * i=1
+#    * *
+#   * * * 
+#  * * * * 
+# * * * * *
+
+
+# n=int(input("Enter a number: "))
+# for i in range(1,n+1):
+#     print(" "*(n-i)+"* "*i)
+
+
+# for i in range(1,n+1):
+#     print(f"{i} "*i) # "3"*3
+
+# n=int(input("Enter a number: "))
+# c=1
+# for i in range(1,n+1):
+#     for j in range(i):
+#         print(c,end=" ")
+#         c+=1
+#     print()
+
+for i in range(3):
+    for j in range(3):
+        print("*")
+
+n=int(input("Enter a num:"))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+
+
+
+a=int(input("Enter first num:"))
+b=int(input("Enter second num:"))
+if a>b:
+    print(f"{a} is greater")
+else:
+    print(f"{b} is greater")

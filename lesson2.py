@@ -256,3 +256,89 @@ while False:
 
 # while True:
 #     print("hello")
+
+# continue
+# example
+# continue statement is used to skip the current iteration and move to the next iteration of the loop
+for i in range(1,11):
+    if i % 2 == 0:
+        continue
+    print(i)
+
+
+
+# print odd numbers from 1 to 20
+for i in range(1,21):
+    if i == 5 or i == 11 or i ==17:
+        continue
+    print(i)
+    print("hi")
+
+l=['a','b','c','d','e']
+for item in l:
+    print(item)
+    if item == 'c':
+        continue
+
+# 2 continue statements
+for i in range(1,16):
+    if i % 3 == 0:
+        continue
+    print(i)
+    if i % 5 == 0:
+        continue
+    
+c=10
+# while c > 0:
+#     if c == 7 or c == 3:
+#         # c-=1
+#         continue
+#     print(c)
+#     c -= 1
+
+# list comphrehension
+# squares of numbers from 1 to 10
+squares=[i**2 for i in range(1,11)]
+print(squares)
+
+nums=[i for i in range(1,11)]
+print(nums)
+
+tens=[i*10 for i in range(1,11)]
+print(tens)
+
+evens=[i for i in range(2,11,2)]
+print(evens)
+
+odds=[i for i in range(1,11,2)]
+print(odds)                 
+
+odds=[i for i in range(1,11) if i%2!=0]
+print(odds)             
+
+# list with varaible strings
+lstrs=["hi","hello","python","programming","data","science","machine","learning"]
+
+
+str5len=[s for s in lstrs if len(s)<=5]
+print(str5len)
+
+# if else in list comprehension
+parity=["even" if i%2==0 else "odd" for i in range(1,11)]
+print(parity)
+
+l2=[i//i if i%2==0 else i**2 for i in range(1,11)]
+print(l2)
+
+# nested loops in list comprehension
+pairs=[(i,j) for i in range(1,6) for j in range(1,3)]
+print(pairs)
+
+pairs2=[(i,j) for i in range(1,6) for j in range(1,3) if i!=j]
+print(pairs2)
+
+l=['rahul','sachin','sourav','virat']
+s=['chary','kumar','singh']
+combinations=[char+" "+k for char in l for k in s]
+print(combinations)
+

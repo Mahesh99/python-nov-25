@@ -1,16 +1,16 @@
-Exercise 1: Basic Function
+Exercise 1: 
 Write a function to return square of a number.
 
   
-Exercise 2: Default Argument
+Exercise 2: 
 Write greet(name) function which prints(sample output: Welcome Ravi), with default value for name as "Guest".
 
 
-Exercise 3: args
+Exercise 3:
 Write a function multiply(*nums) that returns product of all numbers.
 
   
-Exercise 4: kwargs
+Exercise 4: 
 Create a function
 student_info(**data)
 |
@@ -20,7 +20,7 @@ age: 20
 course: Python
 
 
-Exercise 5: Mix all argument types
+Exercise 5: 
 Write a function with:
 2 positional
 unlimited *args
@@ -31,16 +31,16 @@ Example usage:
 func(10, 20, 1,2,3, c=50, name="Ravi")
 
 
-Exercise 6: Scope
+Exercise 6: 
 Write a program showing LEGB example.
 
 
-Exercise 7: Lambda
+Exercise 7: 
 Sort this list using lambda by last digit:
 nums = [23, 45, 12, 78, 34]
 
 
-Exercise 8: Recursion
+Exercise 8: 
 Write a recursive function to sum digits of a number.
 
 

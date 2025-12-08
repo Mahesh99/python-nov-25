@@ -179,3 +179,120 @@ Types of arguments:
 3. Variable-length Arguments (*args)
 4. Variable-length Keyword Arguments (**kwargs)
 """
+
+
+
+def test_func(a,b=10):
+    c=a+b
+    print(a)
+    return c
+
+k=test_func(10,5) + test_func(3)
+print(k) 
+
+
+
+def greatest():
+    a=int(input("Enter a:"))
+    b=int(input("Enter b:"))
+    if a>b:
+        print("a greater")
+    else:
+        print("b greater")
+
+
+# only when we call the function, the code inside it will run
+# greatest()
+
+
+# LEGB
+# Local, Enclosing, Global, Built-in
+# definition
+# whenever you try to access a variable, Python looks for it in the following order: 
+# 1. Local (inside the current function)
+# 2. Enclosing (inside enclosing functions)
+# 3. Global (at the top-level of the module)
+# 4. Built-in (Python's built-in names)
+
+x=100  # global variable
+def outer_function():
+    x=200  # enclosing variable
+    def inner_function():
+        x=300  # local variable
+        print("Inner function x:", x)
+    inner_function()
+    print("Outer function x:", x)
+
+outer_function()
+
+
+
+# len("hello")  # built-in function
+# print(dir(__builtins__))
+
+
+k=5
+def func1():
+    global k
+    k=10
+    print("inside func1:",k)
+func1()
+print("outside func1:",k)
+
+
+# lambda functions
+# anonymous functions
+# syntax
+""" 
+lambda parameters: expression
+"""
+# example 1
+square = lambda x: x ** 2
+
+# def square(x):
+#     return x ** 2
+
+result = square(5)
+print(f"Square of 5 is {result}")
+
+
+add = lambda x, y: x + y
+result = add(3, 7)
+print(f"Sum of 3 and 7 is {result}")
+
+print(add(10,20))
+
+
+# example 2
+# sorting a list of tuples based on the second element
+data = [(1, 3), (2, 1), (4, 2), (3, 5)]
+# data.sort(reverse=True)
+data.sort(key=lambda x: x[1]) # 3,1,2,5
+print(data)
+
+# l=[5,2,9,1]
+# l.sort()
+# print(l)
+
+# high-order functions
+# functions that take other functions as arguments or return functions as results
+# map() and filter() are examples of high-order functions
+
+ran_nums = [4,5,12,9,6]
+
+# example 1 - map
+# using map to square each number in the list
+squared_nums = list(map(lambda x: x ** 2, ran_nums))
+# squared_nums = list(map(lambda x: x ** 2, [4,5,12,9,6]))
+print("Squared numbers:", squared_nums)
+
+# example 1 - filter
+# using filter to get even numbers from the list
+even_nums = list(filter(lambda x: x % 2 == 0, ran_nums))
+print("Even numbers:", even_nums)
+
+# example 2 - filter
+# filter words with length greater than 4
+words = ["apple", "banana", "cherry", "date", "fig", "grape"]
+long_words = list(filter(lambda word: len(word) > 4, words))
+print("Long words:", long_words)

@@ -14,7 +14,7 @@ def guess_the_number():
             print("You guessed right!")
             print(f"You took {turns} turns to guess it right")
             break
-    print(r)
+
 
 
 guess_the_number()

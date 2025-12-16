@@ -23,5 +23,8 @@ def fib2(n):
         a,b=b,a+b
     return result
 
-# fib(7)
-# print(fib2(8))
+
+
+if __name__=="__main__":
+    fib(7)
+    print(fib2(8))

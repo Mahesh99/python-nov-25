@@ -15,3 +15,7 @@ Instructions:
 - Use the greet function to greet someone and print the result.
 - Use the add function to add two numbers and print the result.
 - Print the value of my_variable.
+
+3. Run the test_module.py 
+- verify if the module is importing properly and the code is executing
+
